@@ -1,0 +1,15 @@
+@import "../styles-globals/globals.scss";
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: $color-oscuro;
+    nav{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+            }
+        }
+    }
+}

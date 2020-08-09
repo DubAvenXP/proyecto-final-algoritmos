@@ -1,0 +1,15 @@
+@import "../styles-globals/globals.scss";
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: $color-oscuro;
+    .header__right{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+            }
+        }
+    }
+}
