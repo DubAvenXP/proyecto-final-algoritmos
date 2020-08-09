@@ -1,9 +1,9 @@
-@import "../styles-globals/globals.scss";
+@import "../../styles-globals/globals.scss";
 
 .header{
     display: flex;
     justify-content: flex-end;
-    background-color: $color-oscuro;
+    background-color: rgba($color-primario ,0.77);
     .header__right{
         ul{
             display: flex;

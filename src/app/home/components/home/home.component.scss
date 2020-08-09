@@ -1,4 +1,9 @@
+@import "../../../shared/styles-globals/globals.scss";
 .home{
     display: flex;
-    height: auto;
+    height: 76.4vh;
+    background: url('https://images.pexels.com/photos/612936/pexels-photo-612936.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }

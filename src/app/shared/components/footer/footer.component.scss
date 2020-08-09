@@ -1,16 +1,20 @@
-@import "../styles-globals/globals.scss";
+@import "../../styles-globals/globals.scss";
 
 .footer{
     display: flex;
     justify-content: center;
+    height: auto;
+    text-align: center;
+    border-top: .5em solid $color-primario;
     background-color: $color-oscuro;
-    nav{
-        ul{
-            margin: 0;
-            display: flex;
-            li{
-                list-style: none;
-            }
+    color: $color-claro;
+    @include titulos($font1);
+    @include font(16px, 400);
+    .footer__name{
+        @include font(14px, 100);
+        strong{
+            letter-spacing: 3px;
+            @include font(15px, bold);
         }
     }
 }
