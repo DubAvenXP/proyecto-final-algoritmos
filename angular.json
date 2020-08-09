@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "proyectoAlgoritmos"
+    }
+  },
+  "defaultProject": "proyectoAlgoritmos",
+  "cli": {
+    "analytics": false
+  }
 }
