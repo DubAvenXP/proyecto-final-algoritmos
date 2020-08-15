@@ -3,7 +3,7 @@
 .header{
     display: flex;
     justify-content: flex-end;
-    background-color: rgba($color-primario ,0.77);
+    background-color: $color-oscuro;
     .header__right{
         ul{
             display: flex;

@@ -1,1 +1,48 @@
-<p>side-nav works!</p>
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <span>administracion</span>
+        <button type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon>arrow_back_ios</mat-icon>
+        </button>
+        <ul class="sidenav__menu">
+            <li>
+                <a mat-button routerLink="dashboard">Dashboard</a>
+            </li>
+            <li>
+                <a mat-button routerLink="reportes">Reportes</a>
+            </li>
+            <li>
+                <a mat-button routerLink="inventario">Inventario</a>
+            </li>
+            <li>
+                <a mat-button routerLink="users">Usuarios</a>
+            </li>
+            <li>
+                <a mat-button routerLink="pedidos">Administrar pedidos</a>
+            </li>
+            <li>
+                <a mat-button routerLink="clientes">Clientes</a>
+            </li>
+        </ul>
+</mat-drawer>
+
+<div class="content">
+    <mat-toolbar color="primary" class="header">
+        <nav class="header__right">
+            <ul>
+                <li>
+                    <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+                </li>
+                <li>
+                    <button type="button" mat-button (click)="drawer.toggle()">
+                        <mat-icon>view_quilt</mat-icon>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </mat-toolbar>
+    <!-- content here -->
+    <router-outlet></router-outlet>    
+</div>
+</mat-drawer-container>

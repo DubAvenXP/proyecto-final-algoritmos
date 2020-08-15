@@ -7,3 +7,17 @@
 .footer{
     margin-top: auto;
 }
+
+.container {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.admin-content {
+    display: flex;
+    height: 76.4vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.example-sidenav {
+    padding: 20px;
+}

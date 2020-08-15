@@ -1,0 +1,32 @@
+@import "../../../shared/styles-globals/globals.scss";
+CSS .container {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.sidenav {
+    padding: 20px;
+    &__menu{
+        li{
+            list-style: none;
+            margin-top: 10px;
+        }
+    }
+}
+.content {
+    display: block;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: $color-oscuro;
+    .header__right{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+            }
+        }
+    }
+}
