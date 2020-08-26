@@ -1,7 +1,15 @@
-.contact_form {
+@import "../../../shared/styles-globals/globals.scss";
 .contact {
   font-family: 'Courier New', Courier, monospace;
-  background-color: (45deg, #BB1881, #F88B50);
+   background: #03a2aa;//linear-gradient(45deg, #BB1881, #F88B50);
+}
+
+.contactanos {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 50px 0 0 0;
+  margin: 0;
 }
 
 .contact-wrapper {
@@ -9,6 +17,160 @@
   top: 50%;
   transform: translatey(-50%);
   width: 100%;
+  padding: 0;
 }
 
+
+.envelope {
+  position: relative;
+  display: block;
+  width: 30em;
+  height: 35em;
+  margin: 0 auto;
 }
+
+.content {
+  padding: 100px 100px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 9;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 1s;
+
+}
+
+.top-wrapper, .bottom-wrapper {
+  box-sizing: border-box;
+  background: #3c4b52;
+  color: #fff;
+  padding-right: 25px;
+}
+
+.top-wrapper{
+  padding: 2em 2em 0;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+.bottom-wrapper {
+  padding: 0 2em 2em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  transition: all 0.5s ease-in-out;
+  transform-origin: top;
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px;
+} ::after {
+   position: absolute;
+   content: '';
+   display: block;
+   opacity: 0;
+   background: #03A9F5;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+
+form, label {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+form {
+  border-right-width: 300px;
+}
+
+input, textarea {
+  width: 100%;
+  box-shadow: 0;
+  background: transparent;
+  color: #fff;
+}
+
+input {
+  border-width: 0 0 0.1em;
+  border-color: #fff;
+  border-style: solid;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 5x;
+  font-size: 17px;
+}
+
+textarea {
+  border: 0.1em solid #fff;
+  border-radius: 0.25em;
+}
+
+.submit-cart {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+input {
+  padding-bottom: 1em;
+}
+
+.paper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  overflow: hidden;
+ } ::back {
+   top: 0;
+ } ::before {
+   content: '';
+   display: block;
+   width: 0;
+   height: 0;
+   margin-bottom: -1px;
+   border-width: 0 15em 10em 15em;
+   border-color: transparent transparent #D3D3D3;
+}
+
+ transparent {
+   transform-origin: bottom;
+   transform-box: preserve-3d;
+   z-index: 0;
+ } ::after {
+   content: '';
+   display: block;
+   background-color: #D3D3D3;
+   width: 30em;
+   height: 20em;
+}.font {
+   top: 10em;
+   box-shadow: 0.1em 0.5em 0.5em rgba(0,0,0,0.25);
+   z-index: 0;
+ } ::before {
+   content: '';
+   display: block;
+   width: 0;
+   height: 0;
+   border-width: 10em 15em 0 15em;
+   border-color: transparent #fff;
+ } ::after {
+   content: '';
+   display: block;
+   width: 30em;
+   height: 10em;
+   background: #fff;
+   margin: -1px;
+}
+
