@@ -1,6 +1,8 @@
 # Proyecto-final-algoritmos
 Este el proyecto final de algoritmos de la Universidad Mariano Gálvez | Es nuestra segunda vez colaborando como equipo, esta vez dimos un paso mas y desarrollamos un proyecto web con sus respectivas partes en el frontend y backend 
 
+En este repositorio encontraras todo lo relacionado con el frontend
+
 > Los integrantes de este proyecto son:
 
 - Alejandro Dubon
