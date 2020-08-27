@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from '../../../core/services/users/users.service';
 
 @Component({
   selector: 'app-users',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  endpoint = '?results=10';
+  constructor(private userService: UsersService ) { }
 
   ngOnInit(): void {
+    this.getUsers();
+  }
+
+  async getUsers(){
+    const users = await this.userService.getUsers(this.endpoint);
+    console.log(users);
   }
 
 }
