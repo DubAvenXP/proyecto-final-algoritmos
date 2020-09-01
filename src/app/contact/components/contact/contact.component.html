@@ -1,58 +1,37 @@
-<p>contact works!</p>
-<header>Contactanos</header>
-				<div class="contact_form">
-  			<div class="formulario">
-      	<h1>Formulario de contacto</h1>
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-          <form action="submeter-formulario.php" method="post">
-            <p>
-              <label for="nombre" class="colocar_nombre">Nombre
-                <span class="obligatorio">*</span>
-              </label>
-              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-            </p>
-            <p>
-              <label for="email" class="colocar_email">Email
-                <span class="obligatorio">*</span>
-              </label>
-          		<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-            </p>
-            <p>
-              <label for="telefone" class="colocar_telefono">Teléfono</label>
-                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-            </p>
-            <p>
-              <label for="website" class="colocar_website">Sitio web</label>
-              <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-            </p>
-          	<p>
-             <label for="asunto" class="colocar_asunto">Asunto
-	            <span class="obligatorio">*</span>
-            </label>
-            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-            </p>
-            <p>
-            <label for="mensaje" class="colocar_mensaje">Mensaje
-              <span class="obligatorio">*</span>
-            </label>
-            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-            </p>
-            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-            <p class="aviso">
-              <span class="obligatorio"> * </span>los campos son obligatorios.
-           </p>
-
-        </form>
-      	</div>
+<div id="container"></div>
+  <div class="contact">
+    <div class="contactanos">contactanos</div>
+    <div class="back-paper">
+      <div class="content">
+        <div class="form-wrapper">
+          <form action="">
+            <div class="top-wrapper">
+              <div class="input">
+                <label for="">Nombre</label>
+                <input type="text" name="name"/>
+              </div>
+              <div class="input">
+                <label for="">Telefono</label>
+                <input type="number" name="Phone"/>
+              </div>
+              <div class="input">
+                <label for="">Email</label>
+                <input type="text" name="_replyto"/>
+              </div>
+            </div>
+            <div class="bottom-wrapper">
+              <div class="input">
+                <label for="">Message</label>
+                <textarea name="messege" rows="10"></textarea>
+              </div>
+              <div class="submit">
+                <div class="submit-cart" onclick="toggle('flipCard')">Send email</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="frontpaper"></div>
     </div>
-		<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" value="Sushi">
-  </mat-form-field>
+  </div>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-  </mat-form-field>
-</form>
