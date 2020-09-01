@@ -1,9 +1,148 @@
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
+@import "../../../shared/styles-globals/globals.scss";
+.contact {
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url("https://fondosmil.com/fondo/17010.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.example-full-width {
+.contactanos {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+.contact-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
   width: 100%;
+  padding: 0;
+}
+
+
+.envelope {
+  position: relative;
+  display: block;
+  width: 30em;
+  height: 35em;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 100px 100px;
+  box-sizing: content-box;
+  position: relative;
+  font-size: 20px;
+}
+
+.top-wrapper, .bottom-wrapper {
+  box-sizing: border-box;
+  background: #393b44;
+  color: #fff;
+  padding-right: 25px;
+}
+
+.top-wrapper{
+  padding: 4em 2em 0;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+.bottom-wrapper {
+  padding: 0 2em 4em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  position: relative;
+  margin-top: -1px;
+} ::after {
+   position: absolute;
+   display: block;
+   opacity: 0;
+   background: #d6e0f0;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+form, label {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+form {
+  border-right-width: 300px;
+}
+
+input, textarea {
+  width: 100%;
+  box-shadow: 0;
+  background: transparent;
+  color: #fff;
+  padding: 0px;
+}
+
+input {
+  border-width: 0 0 0.1em;
+  border-color: #fff;
+  border-style: solid;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+textarea {
+  border: 0.1em solid #fff;
+  border-radius: 0.25em;
+}
+
+.submit-cart {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background: #fff;
+  width: 30%;
+  border: 5px;
+  box-shadow: none;
+  border-radius: 0.25em;
+  margin-left: 275px;
+}
+
+input {
+  padding-bottom: 0px;
+  padding-top: 5px;
+  margin-bottom: 25px;
+  outline: none;
+}
+
+.paper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  overflow: hidden;
+ }
+
+ transparent {
+   transform-origin: bottom;
+   transform-box: preserve-3d;
+   z-index: 0;
+ }
+
+ .font {
+   top: 10em;
+   box-shadow: 0.1em 0.5em 0.5em rgba(0,0,0,0.25);
+ }
+
+.form-wrapper {
+  margin: 50px 400px;
 }
